@@ -335,11 +335,11 @@
                         <div style="width: calc(50% - 10px);
                                     margin: 5px;
                                     box-sizing: border-box;">     
-                                    {%if request.user.extrainfo.user_type != "student"%} 
+                                    {% comment %} {%if request.user.extrainfo.user_type != "student"%} 
                                     <a class="ui large label" style="height: 120px; width:100%" href="/otheracademic/othersPage/">
-                                {% else%}
+                                {% else%} {% endcomment %}
                                     <a class="ui large label" style="height: 120px; width:100%" href="/otheracademic/">
-                                {% endif%}
+                                {% comment %} {% endif%} {% endcomment %}
                         
                                 <div class="ui centered grid">
                                     <div class="row">

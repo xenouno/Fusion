@@ -185,11 +185,11 @@ def complaint_system_notif(sender, recipient, type, complaint_id,student,message
 
 def otheracademic_notif(sender, recipient, type, otheracademic_id,student,message):
     if(type=='ug_leave_hod'):
-        url = ('otheracademic:leaveApproveForm')
+        url = ('otheracademic:otheracademic')
     elif type=='pg_leave_ta' :
        url = ('otheracademic:leaveApproveTA')
     elif type=='pg_leave_hod' :
-       url = ('otheracademic:leaveApproveHOD')
+       url = ('otheracademic:otheracademic')
     elif type=='ast_ta' :
        url = ('otheracademic:assistantship_form_approval') 
     elif type=='ast_thesis' :
